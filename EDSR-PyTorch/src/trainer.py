@@ -242,13 +242,12 @@ class Trainer():
         diffw = 0
 
         num = -1
-        skip = 15
         framesReceived = 0
         framesFlushed = 0
         pkt = []
         N_bic = []
 
-        encFilePath = "/home/srteam/lrq/EDSR-PyTorch/gpucode/gpu.mp4"#Jockey_000/Jockey_000540
+        encFilePath = "/home/srteam/lrq/EDSR-PyTorch/gpucode/Jockey_000/Jockey_000540.mp4"#
         nvDec = nvc.PyNvDecoder(encFilePath, 0)
         # Convert to planar RGB
         to_rgb = SamplePyTorch.cconverter(960, 540, 0)
@@ -256,10 +255,10 @@ class Trainer():
         to_rgb.add(nvc.PixelFormat.YUV420, nvc.PixelFormat.RGB)
         to_rgb.add(nvc.PixelFormat.RGB, nvc.PixelFormat.RGB_PLANAR)
 
-        dstFile = open('/home/srteam/lrq/EDSR-PyTorch/gpucode/Jockey_000/a.mp4', "wb")
+        dstFile = open('/home/srteam/lrq/EDSR-PyTorch/gpucode/Jockey_000/result.mp4', "wb")
         nvEnc = nvc.PyNvEncoder(
             {"codec": "h264", 's': '3840x2160', 'preset': 'P4', "profile": "high", "tuning_info": "high_quality",
-             "bitrate": "10M", "fps": "30", "gop": str(skip)}, 0,
+             "bitrate": "10M", "fps": "30", "gop": str(self.skip)}, 0,
             nvc.PixelFormat.NV12)  #
         nvEnc2 = nvc.PyNvEncoder(
             {"codec": "h264", 's': '3840x2160', 'preset': 'P4', "profile": "high", "tuning_info": "high_quality",
@@ -332,7 +331,7 @@ class Trainer():
                 if num == 0:
                     sr = self.model(lr, idx_scale)  # tensor().cuda (1,3,2160,3840)
                     self.ckp.write_log('sr num is :{:01d}\n'.format(num))
-                if num < 30 and num % skip == 0:
+                if num < 30 and num % self.skip == 0:
                     sr = self.model(lr, idx_scale)  # tensor().cuda (1,3,2160,3840)
                     self.ckp.write_log('sr num is :{:01d}\n'.format(num))
 
@@ -354,7 +353,7 @@ class Trainer():
                     # Encoded video frame
                     success_sr = nvEnc2.EncodeSingleSurface(sr_surface, encFrame2, sync=True)  # False，则编码操作是异步的
 
-                if (num - 3) % skip == 0:
+                if (num - 3) % self.skip == 0:
                     sr = sr.squeeze(0).contiguous()  ######torch.Size([3, 2160, 3840]
                     sr_surface = to_nv12.run(SamplePyTorch.tensor_to_surface(sr, gpu_id))
                     # Encoded video frame
@@ -369,13 +368,13 @@ class Trainer():
                     if success_sr:
                         pkt.append(encFrame2)  # .copy()
                         framesReceived += 1
-                if num > 3 and (num - 3) % skip == 0:
+                if num > 3 and (num - 3) % self.skip == 0:
                     if success_sr:
                         pkt.append(encFrame2)  # .copy()
                         framesReceived += 1
 
                 if success_bic:
-                    if num > 3 and (num - 3) % skip != 0 and num != 3:
+                    if num > 3 and (num - 3) % self.skip != 0 and num != 3:
                         pkt.append(encFrame.copy())
                         framesReceived += 1
                 else:
