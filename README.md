@@ -27,9 +27,9 @@ Clone this repository into any place you want.
 
 ## Quickstart (Demo2) ##
 
-You can test our  with your video. Place your video in `folder/EDSR-PyTorch/gpucode/videoname`. We only support H264 video.  
+You can test our framework with your video. Place your video in `folder/EDSR-PyTorch/gpucode/videoname`. We only support H264 video.  
 
-Run the script in folder. Before you run the demo, please uncomment the appropriate line in that you want to execute.srcdemo.sh  
+Run the script in folder.   
 
 `cd /EDSR-PyTorch/src`  
 ` python /home/srteam/lrq/EDSR-PyTorch/src/main.py --model FMEN2 --skip 15 --scale 4 --save Jockey_000 --save_results --dir_demo Jockey_000 --data_test Jockey_000 --data_range 1-30 --pre_train /home/srteam/lrq/EDSR-PyTorch/experiment/FMEN_x4/model/test.pt --test_only`  
@@ -37,3 +37,20 @@ Run the script in folder. Before you run the demo, please uncomment the appropri
 `--skip` is the selected SR frequency, `--scale` is the upsampling multiplier, `pre_train` is the pre-training model paths.  
 
 You can find the result video from folder`/EDSR-PyTorch/gpucode/videoname`
+
+
+## train model ##
+
+Before you run the demo, please uncomment the appropriate line in that you want to execute `/EDSR-PyTorch/src/dome2.sh`   
+
+`cd /EDSR-PyTorch/src`  
+` sh demo2.sh` 
+
+
+## Update log ##
+
+- 2024/3/22 
+	
+	- A cloud-based process has been incorporated, i.e., low-resolution video is VPF decoded frame-by-frame, then input to the SR model or double-three interpolation algorithm for upsampling, and finally VPF is encoded according to the SR frequency.
+	- VideoProcessingFramework（VPF）has been incorporated.
+	- Uploaded pre-trained model of fmen 4x\6x\8x.
