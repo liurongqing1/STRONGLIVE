@@ -13,4 +13,5 @@
 ###- CUDA Toolkit 11.2 or above
 ###- FFMPEG（See VideoProcessingFramework folder for details）
 ###- Python 3 and above
-
+###- Pytorch (Corresponding GPU version)
+###- Installation of packages required for FMEN and EDSR(https://github.com/NJU-Jet/FMEN, https://github.com/sanghyun-son/EDSR-PyTorch/tree/master)
