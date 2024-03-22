@@ -2,8 +2,7 @@
 
 ----------
 
-STRONGLIVE, an innovative approach to enhancing mobile 4K live video streaming performance. STRONGLIVE capitalizes on recent advancements in SR to facilitate low-latency offloading and seamless real-time streaming. 
-We provide scripts for reproducing all the results from our paper. You can train your model from scratch, or use a pre-trained model to enlarge your images.
+STRONGLIVE, an innovative approach to enhancing mobile 4K live video streaming performance. STRONGLIVE capitalizes on recent advancements in SR and incorporates the VPF methodology, which is executed on the GPU throughout the cloud to facilitate low-latency offloading and seamless real-time streaming. 
 
 
 ## Prerequisites ##
@@ -40,6 +39,7 @@ You can find the result video from folder`/EDSR-PyTorch/gpucode/videoname`
 
 
 ## train model ##
+We provide scripts for reproducing all the results from our paper. You can train your model from scratch, or use a pre-trained model to enlarge your images.  
 
 Before you run the demo, please uncomment the appropriate line in that you want to execute `/EDSR-PyTorch/src/dome2.sh`   
 
