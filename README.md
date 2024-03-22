@@ -34,4 +34,6 @@ Run the script in folder. Before you run the demo, please uncomment the appropri
 `cd /EDSR-PyTorch/src`  
 ` python /home/srteam/lrq/EDSR-PyTorch/src/main.py --model FMEN2 --skip 15 --scale 4 --save Jockey_000 --save_results --dir_demo Jockey_000 --data_test Jockey_000 --data_range 1-30 --pre_train /home/srteam/lrq/EDSR-PyTorch/experiment/FMEN_x4/model/test.pt --test_only`  
 
+`--skip` is the selected SR frequency, `--scale` is the upsampling multiplier, `pre_train` is the pre-training model paths.  
+
 You can find the result video from folder`/EDSR-PyTorch/gpucode/videoname`
