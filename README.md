@@ -8,17 +8,30 @@ We provide scripts for reproducing all the results from our paper. You can train
 
 ## Prerequisites ##
 
-VPF works on Linux(Ubuntu 20.04 and Ubuntu 22.04 only) and Windows
-- NVIDIA display driver: 525.xx.xx or above
-- CUDA Toolkit 11.2 or above
-- FFMPEG（See VideoProcessingFramework https://github.com/NVIDIA/VideoProcessingFramework folder for details）
-- Python 3 and above
-- Pytorch (Corresponding GPU version)
+VPF works on Linux(Ubuntu 20.04 and Ubuntu 22.04 only) and Windows  
+- NVIDIA display driver: 525.xx.xx or above  
+- CUDA Toolkit 11.2 or above  
+- FFMPEG（See VideoProcessingFramework https://github.com/NVIDIA/VideoProcessingFramework folder for details）  
+- Python 3 and above  
+- Pytorch (Corresponding GPU version)  
 - Installation of packages required for FMEN and EDSR(https://github.com/NJU-Jet/FMEN, https://github.com/sanghyun-son/EDSR-PyTorch)
 
 
 ## Code ##
 
-Clone this repository into any place you want.
-`git clone https://github.com/liurongqing1/STRONGLIVE`
+Clone this repository into any place you want.  
+
+`git clone https://github.com/liurongqing1/STRONGLIVE`  
 `cd STRONGLIVE`
+
+
+## Quickstart (Demo2) ##
+
+You can test our  with your video. Place your video in `folder/EDSR-PyTorch/gpucode/videoname`. We only support H264 video.  
+
+Run the script in folder. Before you run the demo, please uncomment the appropriate line in that you want to execute.srcdemo.sh  
+
+`cd /EDSR-PyTorch/src`  
+` python /home/srteam/lrq/EDSR-PyTorch/src/main.py --model FMEN2 --skip 15 --scale 4 --save Jockey_000 --save_results --dir_demo Jockey_000 --data_test Jockey_000 --data_range 1-30 --pre_train /home/srteam/lrq/EDSR-PyTorch/experiment/FMEN_x4/model/test.pt --test_only`  
+
+You can find the result video from folder`/EDSR-PyTorch/gpucode/videoname`
