@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTC_CORE.a CMakeFiles/TC_CORE.dir/src/Task.cpp.o CMakeFiles/TC_CORE.dir/src/Token.cpp.o
+/usr/bin/ranlib libTC_CORE.a
