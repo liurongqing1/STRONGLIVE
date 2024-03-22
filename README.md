@@ -20,5 +20,5 @@ VPF works on Linux(Ubuntu 20.04 and Ubuntu 22.04 only) and Windows
 ## Code ##
 
 Clone this repository into any place you want.
-    git clone https://github.com/liurongqing1/STRONGLIVE
-    cd STRONGLIVE
+`git clone https://github.com/liurongqing1/STRONGLIVE`
+`cd STRONGLIVE`
