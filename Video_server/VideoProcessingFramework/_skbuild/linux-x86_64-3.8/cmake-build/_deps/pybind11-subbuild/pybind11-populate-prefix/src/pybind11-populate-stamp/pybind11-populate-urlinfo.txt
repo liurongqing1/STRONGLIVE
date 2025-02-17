@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/tmp/pip-build-env-t0netxfc/overlay/lib/python3.8/site-packages/cmake/data/bin/cmake;-P;/home/srteam/lrq/VideoProcessingFramework/_skbuild/linux-x86_64-3.8/cmake-build/_deps/pybind11-subbuild/pybind11-populate-prefix/src/pybind11-populate-stamp/download-pybind11-populate.cmake;COMMAND;/tmp/pip-build-env-t0netxfc/overlay/lib/python3.8/site-packages/cmake/data/bin/cmake;-P;/home/srteam/lrq/VideoProcessingFramework/_skbuild/linux-x86_64-3.8/cmake-build/_deps/pybind11-subbuild/pybind11-populate-prefix/src/pybind11-populate-stamp/verify-pybind11-populate.cmake;COMMAND;/tmp/pip-build-env-t0netxfc/overlay/lib/python3.8/site-packages/cmake/data/bin/cmake;-P;/home/srteam/lrq/VideoProcessingFramework/_skbuild/linux-x86_64-3.8/cmake-build/_deps/pybind11-subbuild/pybind11-populate-prefix/src/pybind11-populate-stamp/extract-pybind11-populate.cmake
+source_dir=/home/srteam/lrq/VideoProcessingFramework/_skbuild/linux-x86_64-3.8/cmake-build/_deps/pybind11-src
+work_dir=/home/srteam/lrq/VideoProcessingFramework/_skbuild/linux-x86_64-3.8/cmake-build/_deps
+url(s)=https://github.com/pybind/pybind11/archive/v2.10.0.tar.gz
+hash=SHA256=eacf582fa8f696227988d08cfc46121770823839fe9e301a20fbce67e7cd70ec
+no_extract=
+

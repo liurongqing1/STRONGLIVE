@@ -1,1 +1,0 @@
-/home/srteam/lrq/VideoProcessingFramework/_skbuild/linux-x86_64-3.8/cmake-install/src/PyNvCodec/_PyNvCodec.cpython-38-x86_64-linux-gnu.so

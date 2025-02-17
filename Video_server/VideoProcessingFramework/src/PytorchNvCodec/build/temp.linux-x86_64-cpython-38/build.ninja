@@ -1,0 +1,20 @@
+ninja_required_version = 1.3
+cxx = c++
+
+cflags = -pthread -B /home/srteam/anaconda3/envs/VMAF2/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/srteam/anaconda3/envs/VMAF2/lib/python3.8/site-packages/torch/include -I/home/srteam/anaconda3/envs/VMAF2/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/srteam/anaconda3/envs/VMAF2/lib/python3.8/site-packages/torch/include/TH -I/home/srteam/anaconda3/envs/VMAF2/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda-11.3/include -I/home/srteam/anaconda3/envs/VMAF2/include/python3.8 -c
+post_cflags = -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1013"' -DTORCH_EXTENSION_NAME=_PytorchNvCodec -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+
+
+build /home/srteam/lrq/VideoProcessingFramework/src/PytorchNvCodec/build/temp.linux-x86_64-cpython-38/src/PytorchNvCodec.o: compile /home/srteam/lrq/VideoProcessingFramework/src/PytorchNvCodec/src/PytorchNvCodec.cpp
+
+
+
+
+

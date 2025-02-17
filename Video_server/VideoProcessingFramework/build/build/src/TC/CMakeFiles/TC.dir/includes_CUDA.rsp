@@ -1,0 +1,1 @@
+-I/home/srteam/lrq/VideoProcessingFramework/src/TC/inc -I/home/srteam/lrq/VideoProcessingFramework/src/TC/third_party -I/home/srteam/lrq/VideoProcessingFramework/build/src/TC -I/home/srteam/lrq/VideoProcessingFramework/src/TC/TC_CORE/inc -I/home/srteam/lrq/VideoProcessingFramework/build/src/TC/TC_CORE -isystem /usr/local/cuda/include

@@ -1,9 +1,0 @@
-LICENSE
-setup.py
-../PytorchNvCodec/__init__.py
-../PytorchNvCodec.egg-info/PKG-INFO
-../PytorchNvCodec.egg-info/SOURCES.txt
-../PytorchNvCodec.egg-info/dependency_links.txt
-../PytorchNvCodec.egg-info/requires.txt
-../PytorchNvCodec.egg-info/top_level.txt
-src/PytorchNvCodec.cpp

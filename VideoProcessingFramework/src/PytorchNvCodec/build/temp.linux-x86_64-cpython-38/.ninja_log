@@ -1,7 +1,0 @@
-# ninja log v5
-0	20326	1710142006153364928	/home/srteam/lrq/VideoProcessingFramework/src/PytorchNvCodec/build/temp.linux-x86_64-cpython-38/src/PytorchNvCodec.o	653ea0f41b7b8060
-2	17183	1710142578429712101	/home/srteam/lrq/VideoProcessingFramework/src/PytorchNvCodec/build/temp.linux-x86_64-cpython-38/src/PytorchNvCodec.o	d16e4b0c3f421c14
-2	17310	1710143379918406378	/home/srteam/lrq/VideoProcessingFramework/src/PytorchNvCodec/build/temp.linux-x86_64-cpython-38/src/PytorchNvCodec.o	f9c277b52c19a21e
-2	15175	1710144841355857002	/home/srteam/lrq/VideoProcessingFramework/src/PytorchNvCodec/build/temp.linux-x86_64-cpython-38/src/PytorchNvCodec.o	7f851efa3582ad1e
-41	15016	1710833326997716510	/home/srteam/lrq/VideoProcessingFramework/src/PytorchNvCodec/build/temp.linux-x86_64-cpython-38/src/PytorchNvCodec.o	7f851efa3582ad1e
-4	13862	1710833535075223132	/home/srteam/lrq/VideoProcessingFramework/src/PytorchNvCodec/build/temp.linux-x86_64-cpython-38/src/PytorchNvCodec.o	7f851efa3582ad1e
