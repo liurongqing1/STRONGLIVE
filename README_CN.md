@@ -1,4 +1,4 @@
-# 实时视频超分辨率重建项目 (SR_Android)
+# STRONGLIVE：针对移动4K实时流媒体的自适应卸载和场景感知SR学习
 
 ## 项目概述
 本项目实现了针对移动端的实时视频超分辨率重建和MP4视频文件超分辨率重建，包含移动端、视频超分辨率重建服务器和桌面端三大模块。
@@ -95,6 +95,20 @@ Android应用可以用于发送低分辨率的视频进行超分辨率处理。�
    python .../STRONGLIVE/Video_server/EDSR-PyTorch/src/main_7.py --model FMEN2 --skip 1 --scale 4 --save Jockey_007 --save_results --dir_demo Jockey_007 --data_test Jockey_007 --data_range 1-30 --pre_train .../STRONGLIVE/Video_server/EDSR-PyTorch/experiment/FMEN_x4/model/test.pt --test_only
 #### 步骤3：运行Android应用
 打开Android应用，选择实时视频直播或MP4文件进行转换。
+
+
+##引文
+ `
+@misc{iwqos2025，
+      title={STRONGLIVE:Adaptive Offloading and Scene-Aware SR Learning for 4K Live Streaming on Mobile Devices}, 
+      author={Rongqing Liu and Yiqi Liu and Jie Ren and Ling Gao and Jie Zheng},
+      year={2025},
+      eprint={ },
+      archivePrefix={ },
+      primaryClass={ }
+}
+ `
+   
 
    
  
