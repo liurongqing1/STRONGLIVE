@@ -103,7 +103,7 @@ Launch the desktop client to receive high-resolution video frames from the Super
 #### Step 3：Run the Android app
 Open the Android app and select live video streaming or MP4 file to convert
 
-##Citation
+## Citation
  `
 @misc{iwqos2025，
       title={STRONGLIVE:Adaptive Offloading and Scene-Aware SR Learning for 4K Live Streaming on Mobile Devices}, 
