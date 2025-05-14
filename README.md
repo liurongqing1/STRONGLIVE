@@ -1,4 +1,5 @@
-# Real-time video super-resolution reconstruction project  (SR_Android)
+# STRONGLIVE:Adaptive Offloading and Scene-Aware SR Learning for 4K Live Streaming on Mobile Devices
+
 
 ## Project Overview
 This project realizes real-time video super-resolution reconstruction and MP4 video file super-resolution reconstruction for mobile terminal, including three modules: mobile terminal, video super-resolution reconstruction server and desktop terminal.
@@ -102,6 +103,17 @@ Launch the desktop client to receive high-resolution video frames from the Super
 #### Step 3：Run the Android app
 Open the Android app and select live video streaming or MP4 file to convert
 
+##Citation
+ `
+@misc{iwqos2025，
+      title={STRONGLIVE:Adaptive Offloading and Scene-Aware SR Learning for 4K Live Streaming on Mobile Devices}, 
+      author={Rongqing Liu and Yiqi Liu and Jie Ren and Ling Gao and Jie Zheng},
+      year={2025},
+      eprint={ },
+      archivePrefix={ },
+      primaryClass={ }
+}
+ `
    
  
    
