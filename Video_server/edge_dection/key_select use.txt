@@ -1,0 +1,6 @@
+1.∑≈»Î/data/lrq/edge_dection/Jockey_000/LR_bicubic/X8/1/1\2.png
+2.key area cut:
+python /data/lrq/edge_dection/key_select.py Jockey_000 Jockey_001 400 4 1
+3.retrain and test next video vmaf:
+# bash /home/srteam/lrq/EDSR-PyTorch/dataset/DIV2K/blurvmaf_train.sh Jockey_001 4
+
