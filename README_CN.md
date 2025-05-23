@@ -99,7 +99,7 @@ Android应用可以用于发送低分辨率的视频进行超分辨率处理。�
 
 ## 引文
  `
-@misc{iwqos2025，
+@misc{iwqos2025,
       title={STRONGLIVE:Adaptive Offloading and Scene-Aware SR Learning for 4K Live Streaming on Mobile Devices}, 
       author={Rongqing Liu and Yiqi Liu and Jie Ren and Ling Gao and Jie Zheng},
       year={2025},
