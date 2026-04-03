@@ -106,7 +106,7 @@ Open the Android app and select live video streaming or MP4 file to convert
 ## Citation
  ```bibtex
 @inproceedings{liu2025stronglive,
-  title={StrongLive: Adaptive Offloading and Scene-Aware SR Learning for 4 K Live Streaming on Mobile},
+  title={StrongLive: Adaptive Offloading and Scene-Aware SR Learning for 4K Live Streaming on Mobile},
   author={Liu, RongQing and Liu, Yiqi and Ren, Jie and Gao, Ling and Zheng, Jie},
   booktitle={2025 IEEE/ACM 33rd International Symposium on Quality of Service (IWQoS)},
   pages={1--10},
