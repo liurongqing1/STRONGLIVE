@@ -104,16 +104,14 @@ Launch the desktop client to receive high-resolution video frames from the Super
 Open the Android app and select live video streaming or MP4 file to convert
 
 ## Citation
- ` 
-@misc{iwqos2025,
-      title={STRONGLIVE:Adaptive Offloading and Scene-Aware SR Learning for 4K Live Streaming on Mobile Devices}, 
-      author={Rongqing Liu and Yiqi Liu and Jie Ren and Ling Gao and Jie Zheng},
-      year={2025},
-      eprint={ },
-      archivePrefix={ },
-      primaryClass={ }
-}
-`
-   
- 
+ ```bibtex
+@inproceedings{liu2025stronglive,
+  title={StrongLive: Adaptive Offloading and Scene-Aware SR Learning for 4 K Live Streaming on Mobile},
+  author={Liu, RongQing and Liu, Yiqi and Ren, Jie and Gao, Ling and Zheng, Jie},
+  booktitle={2025 IEEE/ACM 33rd International Symposium on Quality of Service (IWQoS)},
+  pages={1--10},
+  year={2025},
+  organization={IEEE}
+}   
+ ```
    
